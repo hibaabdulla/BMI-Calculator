@@ -120,6 +120,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RHH-rY-QYx" secondAttribute="bottom" constant="10" id="vVl-Um-RTv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="J2k-rp-IUN" id="38g-I8-BsD"/>
+                        <outlet property="weightLabel" destination="akd-ub-mfF" id="Hfc-z7-cKV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
