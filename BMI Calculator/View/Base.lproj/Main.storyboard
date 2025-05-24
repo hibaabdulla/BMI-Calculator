@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calculate View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CalculateViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="75.572519083969468" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="T70-Nx-kaV">
             <objects>
-                <viewController id="Bf9-bh-z3E" sceneMemberID="viewController">
+                <viewController id="Bf9-bh-z3E" customClass="ResultViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n4w-u3-TGz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,6 +179,9 @@
                                     <color key="baseForegroundColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="recalculateButtonPressed:" destination="Bf9-bh-z3E" eventType="touchUpInside" id="mQx-G5-xG2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="STY-hL-hmo"/>
@@ -195,6 +198,10 @@
                             <constraint firstItem="Uzr-FV-Qzg" firstAttribute="trailing" secondItem="STY-hL-hmo" secondAttribute="trailing" id="vfO-Vq-v4p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="Wfg-E7-yut" id="XsF-xQ-baR"/>
+                        <outlet property="resultLabel" destination="oc5-Wr-xbE" id="VCf-3i-EGU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y4V-5A-EbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
