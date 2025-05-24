@@ -12,7 +12,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
     
-    var bmiValue: String?
+    var bmiValue = "0.0"
     
     override func viewDidLoad() {
         super.viewDidLoad()
