@@ -128,6 +128,7 @@
                         <outlet property="heightSlider" destination="f0P-9b-8gE" id="p38-dl-kYw"/>
                         <outlet property="weightLabel" destination="akd-ub-mfF" id="Hfc-z7-cKV"/>
                         <outlet property="weightSlider" destination="bM8-ho-wRh" id="Z9H-qe-Spw"/>
+                        <segue destination="Bf9-bh-z3E" kind="presentation" identifier="goToResult" id="voU-KC-q0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -139,15 +140,15 @@
             <objects>
                 <viewController id="Bf9-bh-z3E" customClass="ResultViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n4w-u3-TGz">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result" translatesAutoresizingMaskIntoConstraints="NO" id="Uzr-FV-Qzg">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                                 <color key="tintColor" systemColor="linkColor"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iA1-il-Da8">
-                                <rect key="frame" x="95.333333333333329" y="349.33333333333331" width="202.33333333333337" height="153.66666666666669"/>
+                                <rect key="frame" x="95.333333333333329" y="344.33333333333331" width="202.33333333333337" height="153.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I74-jY-mOY">
                                         <rect key="frame" x="0.0" y="0.0" width="202.33333333333334" height="36"/>
@@ -170,7 +171,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1U-HM-pvE">
-                                <rect key="frame" x="20" y="748" width="353" height="50"/>
+                                <rect key="frame" x="20" y="772" width="353" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Fc8-a1-XZ6"/>
                                 </constraints>
