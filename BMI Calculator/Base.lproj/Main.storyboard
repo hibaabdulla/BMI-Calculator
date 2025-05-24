@@ -103,6 +103,9 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="baseBackgroundColor" red="0.38587427140000002" green="0.37681865689999999" blue="0.61593395470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0c-Z8-ncH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -122,7 +125,9 @@
                     </view>
                     <connections>
                         <outlet property="heightLabel" destination="J2k-rp-IUN" id="38g-I8-BsD"/>
+                        <outlet property="heightSlider" destination="f0P-9b-8gE" id="p38-dl-kYw"/>
                         <outlet property="weightLabel" destination="akd-ub-mfF" id="Hfc-z7-cKV"/>
+                        <outlet property="weightSlider" destination="bM8-ho-wRh" id="Z9H-qe-Spw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -200,7 +205,7 @@
         <image name="calculate" width="375" height="812"/>
         <image name="result" width="375" height="812"/>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
